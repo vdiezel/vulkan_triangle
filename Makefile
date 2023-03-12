@@ -14,9 +14,9 @@
 # sudo pacman -S libxi libxxf86vm
 
 
-STB_INCLUDE_PATH = ./lib
+LIB_PATH = ./lib
 
-CFLAGS = -std=c++17 -O2 -I$(STB_INCLUDE_PATH)
+CFLAGS = -std=c++17 -O3
 LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 
 VulkanTest: main.cpp
