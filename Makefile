@@ -13,7 +13,10 @@
 # install dependencies
 # sudo pacman -S libxi libxxf86vm
 
-CFLAGS = -std=c++17 -O2
+
+STB_INCLUDE_PATH = ./lib
+
+CFLAGS = -std=c++17 -O2 -I$(STB_INCLUDE_PATH)
 LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 
 VulkanTest: main.cpp
